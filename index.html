@@ -7,34 +7,95 @@
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="./images/favicon-32x32.png"
+            href="../src/images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+            rel="stylesheet"
         />
         <link rel="stylesheet" href="../src/styles.css" />
         <title>Frontend Mentor | Interactive card details form</title>
     </head>
     <body>
-        e.g. Jane Appleseed Card Number e.g. 1234 5678 9123 0000 Exp. Date
-        (MM/YY) MM YY CVC e.g. 123 Confirm
+        <main>
+            <div class="aside">
+                <div class="cards">
+                    <div class="card_front"></div>
+                    <div class="card_back"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="form">
+                    <form action="#" method="post">
+                        <label for="name"> Cardholder name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="e.g. Jane Appleseed"
+                        />
+                        <label for="card"> Card number</label>
+                        <input
+                            type="text"
+                            id="card"
+                            name="card"
+                            placeholder="e.g. 1234 5678 9123 0000"
+                        />
+                        <div class="dates">
+                            <div class="exp_date">
+                                <label for="month">Exp. date (mm/yy)</label>
+                                <input
+                                    type="text"
+                                    id="month"
+                                    name="month"
+                                    placeholder="MM"
+                                />
+                                <input
+                                    type="text"
+                                    id="year"
+                                    name="year"
+                                    placeholder="YY"
+                                />
+                            </div>
+                            <div class="cvc">
+                                <label for="cvc"> cvc</label>
+                                <input
+                                    type="text"
+                                    id="cvc"
+                                    name="cvc"
+                                    placeholder="e.g. 123"
+                                />
+                            </div>
+                        </div>
+                        <input type="submit" id="submit" value="Confirm" />
+                    </form>
 
-        <!-- Completed state start -->
-
-        Thank you! We've added your card details Continue
-
-        <div class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                rel="noopener"
-                >Frontend Mentor</a
-            >. Coded by
-            <a
-                href="https://github.com/marcinsuski"
-                target="_blank"
-                rel="noopener"
-                >Marcin Suski</a
-            >.
-        </div>
+                    <!-- Completed state start -->
+                </div>
+                <div class="success">
+                    Thank you! We've added your card details Continue
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    rel="noopener"
+                    >Frontend Mentor</a
+                >. Coded by
+                <a
+                    href="https://github.com/marcinsuski"
+                    target="_blank"
+                    rel="noopener"
+                    >Marcin Suski</a
+                >.
+            </div>
+        </footer>
         <script src="../src/script.js"></script>
     </body>
 </html>

@@ -1,4 +1,9 @@
 :root {
+    --red: hsl(0, 100%, 66%);
+    --white: hsl(0, 0%, 100%);
+    --lightgrayishviolet: hsl(270, 3%, 87%);
+    --darkgrayishviolet: hsl(279, 6%, 55%);
+    --verydarkviolet: hsl(278, 68%, 11%);
 }
 
 *,
@@ -10,6 +15,59 @@
 }
 
 body {
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.aside {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    background-image: url("../src/images/bg-main-mobile.png");
+    background-size: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+.cards {
+    top: 3em;
+    left: 2em;
+    bottom: -2em;
+    height: 500px;
+    width: 80%;
+    height: 80%;
+    border: 1px solid red;
+    position: absolute;
+    display: flex;
+}
+
+.card_front {
+    border: 1px solid green;
+    position: absolute;
+}
+
+.card_back {
+    border: 1px solid green;
+    position: absolute;
+}
+
+.content {
+    width: 100%;
+    height: 70%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
 }
 
 .attribution {
@@ -18,6 +76,12 @@ body {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (max-width: 800px) {
 }
 
 /*
