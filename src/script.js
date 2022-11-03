@@ -96,4 +96,4 @@ cardNumber.addEventListener("keyup", setCardNumber);
 cardMonth.addEventListener("keyup", setCardMonth);
 cardYear.addEventListener("keyup", setCardYear);
 cardCvc.addEventListener("keyup", setCardCvc);
-submit.addEventListener("keyup", handleSubmit);
+submit.addEventListener("click", handleSubmit);
